@@ -1,6 +1,6 @@
 {
   "name": "modul8",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -20,8 +20,8 @@
     "watch:browsersync": "browser-sync start --server --files \"css/*.css, *.html\""
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Dominik Wilusz",
+  "license": "Beerware",
   "devDependencies": {
     "autoprefixer-cli": "^1.0.0",
     "browser-sync": "^2.24.5",

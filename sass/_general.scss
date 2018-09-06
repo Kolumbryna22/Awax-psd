@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    @include clear-mp;
+    font-family: $font;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 20px;
+}

@@ -1,0 +1,14 @@
+nav {
+    background-color: $background-dark;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+.navigation {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    max-width: 1140px;
+    margin: 0 auto;
+}
