@@ -1,0 +1,19 @@
+.services-card {
+    height: 210px;
+    border-left: 1px solid $line-color;
+    padding: 0 30px;
+    text-align: center;
+
+    p {
+        margin: 0;
+        opacity: 0.6;
+    }
+
+    h2 {
+        margin-bottom: 5px;
+    }
+
+    &:last-of-type {
+        border-right: 1px solid $line-color;
+    }
+}

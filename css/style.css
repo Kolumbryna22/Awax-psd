@@ -13,10 +13,19 @@ a {
   text-decoration: none;
 }
 
-section {
-  width: 1140px;
-  margin: 0 auto;
-  padding: 20px;
+button {
+  background-color: #b88b58;
+  color: white;
+  border: 2px solid #b88b58;
+  border-radius: 20px;
+  cursor: pointer;
+  transition-duration: 0.7s;
+  padding: 15px 40px;
+}
+button:hover {
+  background-color: white;
+  border: 2px solid #b88b58;
+  color: #b88b58;
 }
 
 [class*=col-] {
@@ -179,7 +188,7 @@ section {
   }
 }
 .active-link {
-  border-bottom: 2px solid #b88b58;
+  border-bottom: 5px solid #b88b58;
 }
 
 .active-button {
@@ -207,6 +216,65 @@ section {
   max-width: 900px;
 }
 
+.jumbotron-item {
+  position: absolute;
+  top: 20%;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+.jumbotron-item h2 {
+  font-size: 72px;
+}
+.jumbotron-item p {
+  font-size: 24px;
+}
+.jumbotron-item span {
+  display: block;
+  color: #b88b58;
+}
+
+.section-title {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.section-title p {
+  opacity: 0.6;
+  margin: 0;
+}
+.section-title h2 {
+  margin-bottom: 10px;
+}
+
+.services-card {
+  height: 210px;
+  border-left: 1px solid #bebebe;
+  padding: 0 30px;
+  text-align: center;
+}
+.services-card p {
+  margin: 0;
+  opacity: 0.6;
+}
+.services-card h2 {
+  margin-bottom: 5px;
+}
+.services-card:last-of-type {
+  border-right: 1px solid #bebebe;
+}
+
+.section-container {
+  width: 1140px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.section-dark {
+  background-color: black;
+  color: white;
+}
+
 nav {
   background-color: black;
   position: fixed;
@@ -220,6 +288,14 @@ nav {
   justify-content: space-between;
   max-width: 1140px;
   margin: 0 auto;
+}
+
+.jumbotron {
+  position: relative;
+  padding-top: 100px;
+}
+.jumbotron img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

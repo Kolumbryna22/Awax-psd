@@ -11,8 +11,6 @@ a {
     text-decoration: none;
 }
 
-section {
-    width: 1140px;
-    margin: 0 auto;
-    padding: 20px;
+button {
+    @include button-style($primary-color, white, 20px);
 }

@@ -1,0 +1,20 @@
+.jumbotron-item {
+    position: absolute;
+    top: 20%;
+    color: white;
+    text-align: center;
+    width: 100%;
+
+    h2 {
+        font-size: 72px;
+    }
+
+    p {
+        font-size: 24px;
+    }
+
+    span {
+        display: block;
+        color: $primary-color;
+    }
+}
