@@ -5,10 +5,17 @@
 @import 'atoms/active';
 @import 'atoms/logo';
 @import 'atoms/navigation-link';
+@import 'atoms/project-nav-item';
+@import 'atoms/project-item';
+@import 'atoms/little-bootstrap';
 @import 'molecules/navigation-links';
 @import 'molecules/jumbotron-item';
 @import 'molecules/section-title';
 @import 'molecules/services-card';
+@import 'molecules/projects-nav-container';
+@import 'molecules/flex-container';
+@import 'molecules/team-card';
 @import 'components/section';
 @import 'components/navigation';
 @import 'components/jumbotron';
+@import 'components/team';

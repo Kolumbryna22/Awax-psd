@@ -17,3 +17,22 @@
         border-right: 1px solid $line-color;
     }
 }
+
+@media (max-width: 1160px) {
+    .services-card {
+        margin: 30px 0;
+
+        &:nth-of-type(2) {
+            border-right: 1px solid $line-color;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .services-card {
+        width: 290px;
+        margin: 40px auto;
+        float: none;
+        border-right: 1px solid $line-color;
+    }
+}

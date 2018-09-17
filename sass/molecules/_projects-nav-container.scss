@@ -1,0 +1,11 @@
+.projects-nav-container {
+    width: 710px;
+    height: 60px;
+    margin: 0 auto 40px;;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid $border-color;
+    border-radius: 30px;
+    background-color: $background-bright;
+}

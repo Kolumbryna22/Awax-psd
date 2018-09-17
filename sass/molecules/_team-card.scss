@@ -1,0 +1,14 @@
+.team-card {
+    background-color: $background-primary;
+    text-align: center;
+    margin: 15px;
+    padding: 30px;
+    width: 300px;
+
+    img {
+        width: 183px;
+        height: 183px;
+        margin: 0 auto 10px;
+        border-radius: 50%;
+    }
+}
