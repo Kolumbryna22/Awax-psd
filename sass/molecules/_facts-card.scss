@@ -1,0 +1,20 @@
+.facts-card {
+    text-align: center;
+    padding: 15px 20px;
+    position: relative;
+
+    h2 {
+        color: $primary-color;
+        font-size: 40px;
+        margin: 0;
+    }
+
+    h3 {
+        font-size: 24px;
+        margin-top: 10px; 
+    }
+
+    p {
+        opacity: 0.7;
+    }
+}

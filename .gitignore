@@ -72,6 +72,5 @@ typings/
 # Serverless directories
 .serverless
 .sass-cache
-package-lock.json
 zadanie-awax.psd
 vendor/

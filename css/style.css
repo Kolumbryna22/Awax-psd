@@ -41,7 +41,7 @@ button:hover {
   clear: both;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1160px) {
   .col-l-1 {
     width: 8.33%;
   }
@@ -227,6 +227,31 @@ button:hover {
   text-align: center;
 }
 
+.clear-mt {
+  margin-top: 0;
+}
+
+.mb-large {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1160px) {
+  .center-mobile {
+    text-align: center;
+    float: none;
+  }
+
+  .small-width {
+    max-width: 400px;
+    margin: 10px auto;
+  }
+}
+.single-text {
+  width: 80%;
+  max-width: 750px;
+  margin: 20px auto;
+}
+
 .navigation-links {
   display: flex;
   justify-content: space-between;
@@ -309,7 +334,7 @@ button:hover {
   align-items: center;
   border: 1px solid #cfcfcf;
   border-radius: 30px;
-  background-color: #ededed;
+  background-color: #e7dddd;
 }
 
 .flex-container {
@@ -333,6 +358,59 @@ button:hover {
   border-radius: 50%;
 }
 
+.price-card {
+  width: 255px;
+  text-align: center;
+  background-color: white;
+  margin: 20px 7px;
+  padding: 15px 0;
+}
+.price-card h2 {
+  font-size: 18px;
+}
+.price-card h3 {
+  font-size: 30px;
+  margin-top: 10px;
+}
+.price-card p {
+  font-size: 16px;
+}
+.price-card p:last-of-type {
+  padding-bottom: 20px;
+}
+.price-card button {
+  background-color: #373737;
+  color: white;
+  border: 2px solid #373737;
+  border-radius: 20px;
+  cursor: pointer;
+  transition-duration: 0.7s;
+  padding: 15px 40px;
+}
+.price-card button:hover {
+  background-color: white;
+  border: 2px solid #373737;
+  color: #373737;
+}
+
+.facts-card {
+  text-align: center;
+  padding: 15px 20px;
+  position: relative;
+}
+.facts-card h2 {
+  color: #b88b58;
+  font-size: 40px;
+  margin: 0;
+}
+.facts-card h3 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+.facts-card p {
+  opacity: 0.7;
+}
+
 .section-container {
   width: 100%;
   max-width: 1140px;
@@ -343,6 +421,10 @@ button:hover {
 .section-dark {
   background-color: black;
   color: white;
+}
+
+.section-light {
+  background-color: #e7dddd;
 }
 
 nav {

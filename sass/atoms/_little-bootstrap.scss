@@ -1,3 +1,23 @@
 .center {
     text-align: center;
 }
+
+.clear-mt {
+    margin-top: 0;
+}
+
+.mb-large {
+    margin-bottom: $large;
+}
+
+@media (max-width: 1160px) {
+    .center-mobile {
+        text-align: center;
+        float: none;
+    }
+
+    .small-width {
+        max-width: 400px; 
+        margin: 10px auto;
+    }
+}
