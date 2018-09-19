@@ -1,0 +1,22 @@
+.contact {
+    input {
+        width: 100%;
+        display: block;
+        border: none;
+        border-bottom: 1px solid $border-color;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+
+    .row {
+        [class*="col-"] {
+            &:first-of-type {
+                float: left;
+            }
+
+            &:last-of-type {
+                float: right;
+            }
+        }
+    }
+}

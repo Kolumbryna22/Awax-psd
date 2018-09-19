@@ -18,3 +18,27 @@
         color: $primary-color;
     }
 }
+
+@media (max-width: 900px) {
+    .jumbotron-item {
+        h2 {
+            font-size: 60px;
+        }
+    
+        p {
+            font-size: 22px;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .jumbotron-item {
+        h2 {
+            font-size: 40px;
+        }
+    
+        p {
+            font-size: 22px;
+        }
+    }
+}

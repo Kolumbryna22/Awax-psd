@@ -1,0 +1,50 @@
+.social-item {
+    display: flex;
+    align-items: center;
+    margin: 10px; 
+
+    button,
+    img,
+    p {
+        float: left;
+        margin: 0 5px;
+    }
+
+    img {
+        width: 20px;
+        height: 20px;
+    }
+
+    p {
+        @include clear-mp;
+    }
+}
+
+.twitter {
+    @include button-style($twitter, white, 15px);
+}
+
+.facebook {
+    @include button-style($facebook, white, 15px);
+}
+
+.google-plus {
+    @include button-style($google-plus, white, 15px);
+}
+
+.instagram {
+    @include button-style($instagram, white, 15px);
+}
+
+.github {
+    @include button-style($github, white, 15px);
+}
+
+.twitter,
+.facebook,
+.google-plus,
+.github,
+.instagram {
+    padding: 5px;
+    width: 30px;
+}

@@ -1,15 +1,44 @@
-.section-container {
-    width: 100%;
-    max-width: 1140px;
-    margin: 60px auto;
-    padding: 30px;
+section {
+    border: 1px solid $border-color;
 }
 
 .section-dark {
-    background-color: black;
+    background-color: $background-dark;
     color: white;
 }
 
 .section-light {
     background-color: $background-bright;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section-container {
+    @extend .container;
+
+    max-width: 1140px;
+    padding: 30px;
+}
+
+.short-container {
+    @extend .container;
+    
+    max-width: 1140px;
+    padding: 15px;
+}
+
+.little-container {
+    @extend .container;
+    
+    max-width: 600px;
+    padding: 30px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }

@@ -41,6 +41,15 @@ button:hover {
   clear: both;
 }
 
+.flex-grid {
+  display: flex;
+}
+
+.flex-item {
+  flex: 1 1 0;
+  padding: 20px;
+}
+
 @media (min-width: 1160px) {
   .col-l-1 {
     width: 8.33%;
@@ -140,6 +149,15 @@ button:hover {
   }
 }
 @media (max-width: 768px) {
+  .flex-grid {
+    flex-direction: column;
+  }
+
+  .flex-item {
+    flex: auto;
+    text-align: center;
+  }
+
   .col-s-1 {
     width: 8.33%;
   }
@@ -227,6 +245,12 @@ button:hover {
   text-align: center;
 }
 
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .clear-mt {
   margin-top: 0;
 }
@@ -250,6 +274,10 @@ button:hover {
   width: 80%;
   max-width: 750px;
   margin: 20px auto;
+}
+
+.map {
+  width: 100%;
 }
 
 .navigation-links {
@@ -279,6 +307,22 @@ button:hover {
   color: #b88b58;
 }
 
+@media (max-width: 900px) {
+  .jumbotron-item h2 {
+    font-size: 60px;
+  }
+  .jumbotron-item p {
+    font-size: 22px;
+  }
+}
+@media (max-width: 650px) {
+  .jumbotron-item h2 {
+    font-size: 40px;
+  }
+  .jumbotron-item p {
+    font-size: 22px;
+  }
+}
 .section-title {
   text-align: center;
   font-weight: bold;
@@ -335,13 +379,6 @@ button:hover {
   border: 1px solid #cfcfcf;
   border-radius: 30px;
   background-color: #e7dddd;
-}
-
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 40px;
 }
 
 .team-card {
@@ -411,11 +448,141 @@ button:hover {
   opacity: 0.7;
 }
 
-.section-container {
+.social-item {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+.social-item button,
+.social-item img,
+.social-item p {
+  float: left;
+  margin: 0 5px;
+}
+.social-item img {
+  width: 20px;
+  height: 20px;
+}
+.social-item p {
+  margin: 0;
+  padding: 0;
+}
+
+.twitter {
+  background-color: #4099FF;
+  color: white;
+  border: 2px solid #4099FF;
+  border-radius: 15px;
+  cursor: pointer;
+  transition-duration: 0.7s;
+  padding: 15px 40px;
+}
+.twitter:hover {
+  background-color: white;
+  border: 2px solid #4099FF;
+  color: #4099FF;
+}
+
+.facebook {
+  background-color: #3B5998;
+  color: white;
+  border: 2px solid #3B5998;
+  border-radius: 15px;
+  cursor: pointer;
+  transition-duration: 0.7s;
+  padding: 15px 40px;
+}
+.facebook:hover {
+  background-color: white;
+  border: 2px solid #3B5998;
+  color: #3B5998;
+}
+
+.google-plus {
+  background-color: #DB5A3C;
+  color: white;
+  border: 2px solid #DB5A3C;
+  border-radius: 15px;
+  cursor: pointer;
+  transition-duration: 0.7s;
+  padding: 15px 40px;
+}
+.google-plus:hover {
+  background-color: white;
+  border: 2px solid #DB5A3C;
+  color: #DB5A3C;
+}
+
+.instagram {
+  background-color: #5C3D2E;
+  color: white;
+  border: 2px solid #5C3D2E;
+  border-radius: 15px;
+  cursor: pointer;
+  transition-duration: 0.7s;
+  padding: 15px 40px;
+}
+.instagram:hover {
+  background-color: white;
+  border: 2px solid #5C3D2E;
+  color: #5C3D2E;
+}
+
+.github {
+  background-color: #4183C4;
+  color: white;
+  border: 2px solid #4183C4;
+  border-radius: 15px;
+  cursor: pointer;
+  transition-duration: 0.7s;
+  padding: 15px 40px;
+}
+.github:hover {
+  background-color: white;
+  border: 2px solid #4183C4;
+  color: #4183C4;
+}
+
+.twitter,
+.facebook,
+.google-plus,
+.github,
+.instagram {
+  padding: 5px;
+  width: 30px;
+}
+
+.contact input {
   width: 100%;
-  max-width: 1140px;
-  margin: 60px auto;
-  padding: 30px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #cfcfcf;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.contact .row [class*=col-]:first-of-type {
+  float: left;
+}
+.contact .row [class*=col-]:last-of-type {
+  float: right;
+}
+
+.subscribe {
+  background-color: #373737;
+}
+.subscribe input {
+  display: block;
+  background-color: #373737;
+  border: none;
+  border-bottom: 1px solid #bebebe;
+  text-align: center;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  font-size: 18px;
+}
+
+section {
+  border: 1px solid #cfcfcf;
 }
 
 .section-dark {
@@ -425,6 +592,32 @@ button:hover {
 
 .section-light {
   background-color: #e7dddd;
+}
+
+.container, .little-container, .short-container, .section-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section-container {
+  max-width: 1140px;
+  padding: 30px;
+}
+
+.short-container {
+  max-width: 1140px;
+  padding: 15px;
+}
+
+.little-container {
+  max-width: 600px;
+  padding: 30px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 nav {
