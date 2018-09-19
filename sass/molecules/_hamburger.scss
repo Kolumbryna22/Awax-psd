@@ -1,0 +1,21 @@
+.hamburger {
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 25px;
+    margin-top: 35px;
+    cursor: pointer;
+
+    span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: $line-color;
+    }
+}
+
+@media (max-width: 870px) {
+    .hamburger {
+        display: flex;
+    }
+}

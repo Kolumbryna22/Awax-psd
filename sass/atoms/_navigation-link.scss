@@ -3,3 +3,9 @@
     text-align: center;
     color: white;
 }
+
+@media (max-width: 870px) {
+    .navigation-link {
+        padding: 20px 0;
+    }
+}

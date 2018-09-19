@@ -226,6 +226,11 @@ button:hover {
   color: white;
 }
 
+@media (max-width: 870px) {
+  .navigation-link {
+    padding: 20px 0;
+  }
+}
 .project-nav-item {
   padding: 0 20px;
   border-right: 1px solid #bebebe;
@@ -284,20 +289,33 @@ button:hover {
   display: flex;
   justify-content: space-between;
   font-size: 16px;
-  padding: 30px 50px 0;
+  padding: 30px 20px 0;
   width: 100%;
   max-width: 900px;
 }
 
+@media (max-width: 870px) {
+  .navigation-links {
+    flex-direction: column;
+    background-color: black;
+    padding: 30px 0;
+  }
+  .navigation-links .active-link {
+    width: 100px;
+    margin: 0 auto;
+  }
+}
 .jumbotron-item {
   position: absolute;
   top: 20%;
   color: white;
   text-align: center;
   width: 100%;
+  padding: 0 20px;
 }
 .jumbotron-item h2 {
   font-size: 72px;
+  word-wrap: break-word;
 }
 .jumbotron-item p {
   font-size: 24px;
@@ -581,6 +599,26 @@ button:hover {
   font-size: 18px;
 }
 
+.hamburger {
+  display: none;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 25px;
+  margin-top: 35px;
+  cursor: pointer;
+}
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #bebebe;
+}
+
+@media (max-width: 870px) {
+  .hamburger {
+    display: flex;
+  }
+}
 section {
   border: 1px solid #cfcfcf;
 }
@@ -629,10 +667,11 @@ nav {
 
 .navigation {
   display: flex;
-  height: 100px;
   justify-content: space-between;
   max-width: 1140px;
+  min-height: 100px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .jumbotron {
@@ -641,6 +680,7 @@ nav {
 }
 .jumbotron img {
   width: 100%;
+  min-height: 400px;
 }
 
 .team {

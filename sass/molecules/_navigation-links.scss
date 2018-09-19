@@ -2,7 +2,20 @@
     display: flex;
     justify-content: space-between;
     font-size: 16px;
-    padding: 30px 50px 0;
+    padding: 30px 20px 0;
     width: 100%;
     max-width: 900px;
+}
+
+@media (max-width: 870px) {
+    .navigation-links {
+        flex-direction: column;
+        background-color: $background-dark;
+        padding: 30px 0;
+
+        .active-link {
+            width: 100px;
+            margin: 0 auto;
+        }
+    }
 }
