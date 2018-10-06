@@ -225,6 +225,9 @@ button:hover {
   text-align: center;
   color: white;
 }
+.navigation-link:hover {
+  border-bottom: 5px solid #b88b58;
+}
 
 @media (max-width: 870px) {
   .navigation-link {
@@ -236,8 +239,15 @@ button:hover {
   border-right: 1px solid #bebebe;
   width: 100%;
 }
+.project-nav-item:first-child {
+  border-bottom-left-radius: 20px;
+}
 .project-nav-item:last-child {
-  border: none;
+  border-right: none;
+  border-bottom-right-radius: 20px;
+}
+.project-nav-item:hover {
+  border-bottom: 5px solid #b88b58;
 }
 
 .project-item {
@@ -283,6 +293,14 @@ button:hover {
 
 .map {
   width: 100%;
+}
+
+.video {
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+.video:hover {
+  opacity: 0.7;
 }
 
 .navigation-links {

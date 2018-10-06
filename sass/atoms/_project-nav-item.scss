@@ -3,7 +3,16 @@
     border-right: 1px solid $line-color;
     width: 100%;
 
+    &:first-child {
+        border-bottom-left-radius: 20px;
+    }
+
     &:last-child {
-        border: none;
+        border-right: none;
+        border-bottom-right-radius: 20px;
+    }
+
+    &:hover {
+        border-bottom: 5px solid $primary-color;
     }
 }

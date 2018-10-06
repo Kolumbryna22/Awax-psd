@@ -2,6 +2,10 @@
     padding: 0 10px;
     text-align: center;
     color: white;
+
+    &:hover {
+        border-bottom: 5px solid $primary-color;
+    }
 }
 
 @media (max-width: 870px) {
