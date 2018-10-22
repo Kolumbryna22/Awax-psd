@@ -207,7 +207,7 @@ button:hover {
   }
 }
 .active-link {
-  border-bottom: 5px solid #b88b58;
+  border-bottom: 5px solid #b88b58 !important;
 }
 
 .active-button {
@@ -224,6 +224,7 @@ button:hover {
   padding: 0 10px;
   text-align: center;
   color: white;
+  cursor: pointer;
 }
 .navigation-link:hover {
   border-bottom: 5px solid #b88b58;
@@ -238,6 +239,7 @@ button:hover {
   padding: 0 20px;
   border-right: 1px solid #bebebe;
   width: 100%;
+  cursor: pointer;
 }
 .project-nav-item:first-child {
   border-bottom-left-radius: 20px;
@@ -247,9 +249,23 @@ button:hover {
   border-bottom-right-radius: 20px;
 }
 .project-nav-item:hover {
-  border-bottom: 5px solid #b88b58;
+  border-bottom: 5px solid #b88b58 !important;
 }
 
+@media (max-width: 747px) {
+  .project-nav-item {
+    border-right: none;
+  }
+  .project-nav-item:not(:last-child) {
+    border-bottom: 1px solid #bebebe;
+  }
+  .project-nav-item:first-child {
+    border-bottom-left-radius: 0;
+  }
+  .project-nav-item:last-child {
+    border-bottom-left-radius: 20px;
+  }
+}
 .project-item {
   width: 255px;
   height: 165px;
@@ -417,6 +433,13 @@ button:hover {
   background-color: #e7dddd;
 }
 
+@media (max-width: 747px) {
+  .projects-nav-container {
+    flex-direction: column;
+    height: 360px;
+    width: 80%;
+  }
+}
 .team-card {
   background-color: white;
   text-align: center;

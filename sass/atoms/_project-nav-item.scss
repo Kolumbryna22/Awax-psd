@@ -2,6 +2,7 @@
     padding: 0 20px;
     border-right: 1px solid $line-color;
     width: 100%;
+    cursor: pointer;
 
     &:first-child {
         border-bottom-left-radius: 20px;
@@ -13,6 +14,24 @@
     }
 
     &:hover {
-        border-bottom: 5px solid $primary-color;
+        border-bottom: 5px solid $primary-color !important; // important to overwrite :not for smaller screens
+    }
+}
+
+@media (max-width: 747px) {
+    .project-nav-item {
+        border-right: none;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid $line-color;
+        }
+
+        &:first-child {
+            border-bottom-left-radius: 0;
+        }
+    
+        &:last-child {
+            border-bottom-left-radius: 20px;
+        }
     }
 }

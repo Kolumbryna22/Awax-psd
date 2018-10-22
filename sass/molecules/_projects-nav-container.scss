@@ -9,3 +9,11 @@
     border-radius: 30px;
     background-color: $background-bright;
 }
+
+@media (max-width: 747px) {
+    .projects-nav-container {
+        flex-direction: column;
+        height: 360px;
+        width: 80%;
+    }
+}
